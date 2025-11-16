@@ -1,24 +1,11 @@
-version: "3.9"
-
 services:
   devops1:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     image: devops1:latest
     container_name: devops1-app
     ports:
-      - "8081:80"          # host:container
+      - "8080:80"
     restart: unless-stopped
     environment:
-      - TZ=Asia/Kathmandu   # optional – ensures logs show Nepal time
-    labels:
-      - "com.devops1.description=DevOps1 landing page"
-
-# (Optional) Add a health‑check so Compose knows when the site is ready
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-      start_period: 5s
+      - TZ=Asia/Kathmandu
+    stop_grace_period: 5s
