@@ -6,100 +6,15 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
   min-height: 100vh;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-header {
-  text-align: center;
-  padding: 5rem 1rem;
-}
-
-header h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-header p {
-  font-size: 1.4rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
-}
-
-.cta {
-  background: #00c6ff;
-  color: white;
-  border: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 8px 25px rgba(0, 198, 255, 0.3);
-}
-
-.cta:hover {
-  background: #0072ff;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 114, 255, 0.4);
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 5rem 0;
-  flex-wrap: wrap;
-}
-
-.feature {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 2.5rem;
-  border-radius: 20px;
-  width: 320px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s;
-}
-
-.feature:hover {
-  transform: translateY(-12px);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
-
-.feature h3 {
-  color: #00c6ff;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-}
-
-footer {
-  text-align: center;
-  padding: 3rem;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.95rem;
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.8rem;
-  }
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
+code {
+  font-family: 'Fira Code', monospace;
+  background: rgba(0,0,0,0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
