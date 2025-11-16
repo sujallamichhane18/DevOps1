@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
-import LoginPage from './pages/LoginPage'
-import Dashboard from './pages/Dashboard'
-import NepalTime from './components/NepalTime'
+import LoginPage from './pages/LoginPage.jsx'
+import Dashboard from './pages/Dashboard.jsx'
+import NepalTime from './components/NepalTime.jsx'  // ← Fixed!
 
 const AuthContext = createContext()
 
