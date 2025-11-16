@@ -8,7 +8,7 @@ services:
     image: devops1:latest
     container_name: devops1-app
     ports:
-      - "8080:80"          # host:container
+      - "8081:80"          # host:container
     restart: unless-stopped
     environment:
       - TZ=Asia/Kathmandu   # optional – ensures logs show Nepal time
