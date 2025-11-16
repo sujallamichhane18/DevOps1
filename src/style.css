@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #333;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
   min-height: 100vh;
 }
 
@@ -19,76 +19,84 @@ body {
 
 header {
   text-align: center;
-  padding: 4rem 1rem;
-  color: white;
+  padding: 5rem 1rem;
 }
 
 header h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 header p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
   opacity: 0.9;
 }
 
 .cta {
-  background: #ff6b6b;
+  background: #00c6ff;
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s;
+  box-shadow: 0 8px 25px rgba(0, 198, 255, 0.3);
 }
 
 .cta:hover {
-  background: #ff5252;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background: #0072ff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 114, 255, 0.4);
 }
 
 .features {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 4rem 0;
+  margin: 5rem 0;
   flex-wrap: wrap;
 }
 
 .feature {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 320px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
 }
 
 .feature:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .feature h3 {
-  color: #667eea;
+  color: #00c6ff;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
-  color: rgba(255,255,255,0.8);
-  font-size: 0.9rem;
+  padding: 3rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .features {
     flex-direction: column;
