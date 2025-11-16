@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAuth } from '../App'
+import { useAuth } from '../App.jsx'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
